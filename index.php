@@ -65,7 +65,7 @@
 
 
         <!-- appel du script -->
-          <div id="indeed"></div>
+        <div id="indeed"></div>
 
         <hr>
 
