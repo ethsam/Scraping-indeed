@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<!-- la class simple_html_dom est requis pour le parse du flux recupéré-->
 <?php require 'simple_html_dom.php';?>
 
 <head>
