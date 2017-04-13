@@ -83,8 +83,8 @@
 
     <div id="search">
         <button type="button" class="close">×</button>
-          <form>
-            <input type="search" value="" placeholder="entrer le metier (ex: développeur)" />
+          <form action="scrap.php" method="post">
+            <input type="search" value="" name="motclef" placeholder="entrer le metier (ex: développeur)" />
               <button type="submit" class="btn btn-primary">Rechercher</button>
           </form>
     </div>
