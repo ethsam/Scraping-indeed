@@ -13,6 +13,15 @@ $(function () {
 
     $('form').submit(function(event) {
         event.preventDefault();
+        var donnees = $('#envoi').val();
+              $.ajax({
+             url : 'scrap.php', // La ressource ciblée
+             type : 'POST', // Le type de la requête HTTP.
+             data : 'motclef=' + donnees,
+             success: function( data ) {
+                $('#indeed').replaceWith($('#indeed').html(data));}
+                    });
         return false;
+        $(this).removeClass('open');
     })
 });

@@ -85,8 +85,8 @@
     <div id="search">
         <button type="button" class="close">×</button>
           <form action="scrap.php" method="post">
-            <input type="search" value="" name="motclef" placeholder="entrer le metier (ex: développeur)" />
-              <button type="submit" class="btn btn-primary">Rechercher</button>
+            <input type="search" value="" name="motclef" id="envoi" placeholder="entrer le metier (ex: développeur)" />
+              <button type="submit" class="btn btn-primary" name="envoi">Rechercher</button>
           </form>
     </div>
     <!-- /.container -->
@@ -99,12 +99,13 @@
 
     <script src="js/search.js"></script>
 
-    <script>
-		$(function()
-		{
-			$("#indeed").load("scrap.php");
-		});
-		</script>
+        <script>
+          	$(function()
+          		{
+          			$("#indeed").load("scrap.php");
+          		});
+    		</script>
+
 
 </body>
 
